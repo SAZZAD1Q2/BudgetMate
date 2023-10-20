@@ -19,17 +19,6 @@
 
 <div class="mb-5">
 
-<% if @groups.empty? %>
-
-    <div class="d-flex flex-column justify-content-center align-items-center m-5">
-
-        <p>Category is empty.</p>
-        <%= link_to 'Add Category', new_group_path, class: 'btn btn-primary' %>
-
-     </div>
-<% else %>
-
-
  <% @groups.each do |group|%>
      <%= link_to controller: 'groups', action: 'show', id: group.id do %>
           <div class="align-items-center bg-white p-2 m-2 shadow-sm" >
