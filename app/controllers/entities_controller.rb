@@ -15,8 +15,6 @@ class EntitiesController < ApplicationController
     @entity = Entity.new
     @entity.group_id = params[:group_id] # Set the group_id based on your requirements.
   end
-  
-  
 
   def create
     puts params
