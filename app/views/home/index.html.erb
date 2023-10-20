@@ -11,7 +11,7 @@
 
     </div>
   </nav>
-<div class="justify-content-between align-items-center bg-white p-2">
+<div class="d-flex justify-content-between align-items-center bg-white p-2">
   <h6 class="pt-2">Categories</h6>
 
   <%= link_to 'Add Category', new_group_path, class: 'btn btn-primary' %>
@@ -32,9 +32,9 @@
 
  <% @groups.each do |group|%>
      <%= link_to controller: 'groups', action: 'show', id: group.id do %>
-          <div class="align-items-center bg-white p-2 m-2 shadow-sm" >
+          <div class="d-flex justify-content-between align-items-center bg-white p-2 gap-6 m-2 shadow-sm" >
 
-            <div class="justify-content-start align-items-center gap-3">
+            <div class="d-flex justify-content-start align-items-center gap-3">
               <img src="<%= group.icon %>" height="100" width="100">
               <div class="flex-column d-flex justify-content-between mt-4">
                 <h6 class="pb-3 text-black-60"><%= group.name.capitalize %></h6>
