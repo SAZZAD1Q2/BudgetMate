@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: budget_mate_production
-  username: <%= ENV["POSTGRES_USERNAME"] %>
-  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
