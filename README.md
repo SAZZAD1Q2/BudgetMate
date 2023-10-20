@@ -100,9 +100,19 @@ c. Test the code using jest snapShots and for this use the Command : npx jest
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### deployment
+<!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You may use the online version of my work. Here is the link of online version: [Link]()
+- [Live Demo Link](https://mobile-app-zn.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p
+
+<!-- Presentation Video -->
+## 🎥 Presentation Video <a name="presentation-video"></a>
+
+- [Presentation Video Link](https://www.loom.com/share/590eccee11f94d65b2fb7aaddeaedc70?sid=1d276fce-a84b-4b5e-9db2-02254369e9f5)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
