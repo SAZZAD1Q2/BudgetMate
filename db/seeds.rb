@@ -1,9 +1,11 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# Create a user with your own email and a known password
+email = 'yaehyaa3@gmail.com'
+known_password = 'aA#12345678'
+
+user_data = [
+  User.new(email: email, encrypted_password: Devise::Encryptor.digest(User, known_password))
+]
+
+user_data.each do |user|
+  user.save(validate: false)
+end

@@ -1,23 +1,39 @@
-    <nav class="navbar navbar-default navbar-expand-lg fixed-top">
-    <div class="container flex justify-content0-between align-items-center">
 
-      <span></span>
-     
-      <h6 class="title">CATEGORIES</h6>
+<nav class="navbar navbar-default navbar-expand-lg fixed-top" style="background-color: #3778c2;">
+  <div class="container flex justify-content-between align-items-center">
+    <span></span>
+    <h6 class="title">CATEGORIES</h6>
+    <div></div>
+  </div>
+</nav>
 
+<div class="d-flex justify-content-between align-items-center bg-white p-2" >
 
-      <div></div>
-
-
-    </div>
-  </nav>
-<div class="d-flex justify-content-between align-items-center bg-white p-2">
   <h6 class="pt-2">Categories</h6>
 
   <%= link_to 'Add Category', new_group_path, class: 'btn btn-primary' %>
 </div>
 
 <div class="mb-5">
+
+  <% if false %>
+    <div class="d-flex flex-column justify-content-center align-items-center m-5">
+      <p>Category is empty.</p>
+      <%= link_to 'Add Category', new_group_path, class: 'btn btn-primary' %>
+    </div>
+  <% else %>
+    <% 1.times do %>
+      <%= link_to controller: 'groups', action: 'show', id: 1 do %>
+        <div class="d-flex justify-content-between align-items-center bg-white p-2 gap-6 m-2 shadow-sm">
+          <div class="d-flex justify-content-start align-items-center gap-3">
+            <%# <img src="<%= 'group.icon' %>
+            <div class="flex-column d-flex justify-content-between mt-4">
+              <%# < class="pb-3 text-black-60"><%= 'group.name.capitalize' %>
+              <%# < class="text-black-50"><%= 'group.created_at.strftime("%Y-%m-%d")' %>
+            </div>
+          </div>
+          <div class="fw-bold">$100</div>
+=======
 
 <% if @groups.empty? %>
 
@@ -42,6 +58,7 @@
               </div>
             </div>
             <div class="fw-bold">$100</div>
+
         </div>
       <% end %>
     <% end %>
@@ -51,7 +68,12 @@
   <div class="position-fixed bottom-0 w-100">
     <div class="d-flex justify-content-center align-items-center bg-white p-2">
 
-  <%= link_to 'Add Category', new_group_path, class: 'btn btn-primary w-full w-50' %>
+
+<div class="position-fixed bottom-0 w-100">
+  <div class="d-flex justify-content-center align-items-center bg-white p-2">
+    <%= link_to 'Add Category', new_group_path, class: 'btn btn-primary w-full w-100', style: 'background-color: #5fb523;' %>
+  </div>
+
 </div>
 </div>
 

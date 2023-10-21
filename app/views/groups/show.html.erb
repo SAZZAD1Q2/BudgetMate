@@ -11,17 +11,19 @@
 
     </div>
   </nav>
-<div class="d-flex justify-content-between align-items-center bg-white p-2">
+
+<div class=" justify-content-between align-items-center bg-white p-2">
+
 
     
 
-        <div class="d-flex justify-content-start align-items-center gap-3">
+        <div class=" justify-content-start align-items-center gap-3">
         <%= link_to root_path do  %> 
           <i class="fa-solid fa-chevron-left icon" ></i>
         <% end %>
               <img src="<%= @group.icon %>" height="50" width="50" class="rounded-circle">
               <div class="flex-column d-flex justify-content-between mt-4">
-                <h6 class="pb-3 text-black-60"><%= @group.name.capitalize %></h6>
+                <%# <h6 class="pb-3 text-black-60"><%= @group.name.capitalize %></h6>
               </div>
             </div>
 
@@ -31,10 +33,10 @@
 <div class="mb-5">
 <% if @group.entities.empty? %>
 
-    <div class="d-flex flex-column justify-content-center align-items-center m-5">
+    <div class=" flex-column justify-content-center align-items-center m-5">
 
         <p>Transaction is empty.</p>
-        <%= link_to 'Add Transaction', new_entity_path(group_id: @group.id), class: 'btn btn-primary' %>
+        <%= link_to 'Add Transaction', new_entity_path(group_id: @group.id), class: 'btn btn-primary', style: 'background-color: #5fb523;' %>
 
      </div>
 <% else %>
@@ -44,13 +46,15 @@
 
  <% @group.entities.order(created_at: :desc).each do |group|%>
 
-          <div class="d-flex justify-content-between align-items-center bg-white p-2 gap-6 m-2 shadow-sm" >
 
-            <div class="d-flex justify-content-start align-items-center gap-3">
+          <div class=" justify-content-between align-items-center bg-white p-2 gap-6 m-2 shadow-sm" >
+
+
+            <div class=" justify-content-start align-items-center gap-3">
 
               <div class="flex-column d-flex justify-content-between mt-4">
                 <h6 class="pb-3 text-black-60"><%= group.name %></h6>
-                <p class="text-black-50"><%= group.created_at.strftime("%Y-%m-%d") %></p>
+                <%# <p class="text-black-50"><%= group.created_at.strftime("%Y-%m-%d") %></p>
               </div>
             </div>
             <div class="fw-bold">$<%= group.amount %></div>
@@ -61,9 +65,9 @@
 
 </div>
   <div class="position-fixed bottom-0 w-100">
-    <div class="d-flex justify-content-center align-items-center bg-white p-2">
+    <div class=" justify-content-center align-items-center bg-white p-2">
 
-  <%= link_to 'Add Transaction', new_entity_path(group_id: @group.id), class: 'btn btn-primary w-50' %>
+  <%= link_to 'Add Transaction', new_entity_path(group_id: @group.id), class: 'btn btn-primary w-100', style: 'background-color: #5fb523;' %>
 </div>
 </div>
 
