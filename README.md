@@ -100,9 +100,19 @@ c. Test the code using jest snapShots and for this use the Command : npx jest
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### deployment
+<!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You may use the online version of my work. Here is the link of online version: [Link]()
+- [Live Demo Link](https://sazzad-3q4t.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p
+
+<!-- Presentation Video -->
+## 🎥 Presentation Video <a name="presentation-video"></a>
+
+- [Presentation Video Link](https://www.loom.com/share/f23033b6496d4d78940346b1b396d23b?sid=c2e421d1-47fb-4e0d-a0f6-216d2da0feb6)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
@@ -144,7 +154,8 @@ If you like this project. Give me star. please spread it out to your network.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-I would like to thank Microverse community.
+
+I would like to show my gratitude to Microverse for giving the idea behind this project and Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
