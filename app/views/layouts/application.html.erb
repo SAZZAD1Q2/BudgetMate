@@ -15,18 +15,19 @@
       <div id="burgerBtn"></div>
       <ul id="nav">
         <% if user_signed_in? %>
-          <li><%= link_to "Home", "/" %></li>
+          <li><%= link_to "Home", "/", style: 'color: white;' %></li>
           <% @groups.each do |group| %>
             <li>
-              <%= link_to group_path(group) do %>
+              <%= link_to group_path(group), style: 'color: white;' do %>
                 <%= group.name.capitalize %>
               <% end %>
             </li>
           <% end %>
          
         <% else %>
-          <li><%= link_to "Sign up", new_user_registration_path %></li>
-          <li><%= link_to "Log in", new_user_session_path %></li>
+         <li><%= link_to "Sign up", new_user_registration_path, style: 'color: white;' %></li>
+         <li><%= link_to "Log in", new_user_session_path, style: 'color: white;' %></li>
+
         <% end %>
       </ul>
       <main id="bodyContent">
